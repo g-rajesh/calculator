@@ -1,0 +1,87 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #333;
+}
+
+.container{
+  width: 300px;
+  margin: 50px auto;
+  /* border: 1px solid #333; */
+}
+
+form{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+}
+
+input{
+  /* border: none;
+  outline: none; */
+}
+
+#previous{
+  height: 100px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 22px;
+  padding-top: 60px;
+}
+
+#output{
+  font-size: 35px;
+}
+
+form{
+  background: #5d5f63;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+input[type="text"]{
+  grid-column: span 5;
+  height: 40px;
+  text-align: right;
+  padding-right: 15px;
+  border: none;
+  background: #010505;
+  color: #fff;
+}
+
+input[type="button"]{
+  padding:20px;
+  background: none;
+  outline: none;
+  border: none;
+  background: #fff;
+  font-size: 1rem;
+}
+
+input[type="button"]:hover{
+  background: #00796b;
+  cursor: pointer;
+}
+
+input[value=" log"],input[value=")"],input[value="/"],input.times,input[value="-"],input[value="+"],input[value="x!"],input[value="!"],input[value="0"],input[value="."]{
+  background:#59a59d;
+}
+
+input[type="button"]:last-child{
+  border-bottom-right-radius: 10px; 
+  background: #055f51;
+}
+input[type=button]:nth-child(33){
+  border-bottom-left-radius: 10px;
+}
+
+input[value='AC'],input[value='AC']:hover{
+  background: #ec407a;
+}

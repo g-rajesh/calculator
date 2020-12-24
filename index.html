@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form>
+        <input type="text" id="previous" readonly="true">
+        <input type="text" id="output" readonly="true">
+      <!-- first -->
+      <td><input type="button" value="asin" class="asin" onclick="asin()"></td>
+      <td><input type="button" value="acos" class="acos" onclick="acos()"></td>
+      <td><input type="button" value="atan" class="atan" onclick="atan()"></td>
+      <td><input type="button" value="   ln" class="ln" onclick="ln()"></td>
+      <td><input type="button" value=" log" class="log" onclick="log()"></td>
+      <!-- Second -->
+      
+      <td><input type="button" value="sin" onclick="sin()"></td>
+      <td><input type="button" value="cos" onclick="cos()"></td>
+      <td><input type="button" value="tan" onclick="tan()"></td>
+      <td><input type="button" value="(" onclick="display(value)"></td>
+      <td><input type="button" value=")" onclick="display(value)"></td>
+      <!-- Third -->
+      <td><input type="button" value="&Sqrt;" onclick="sqrt(value)"></td>
+      <td><input type="button" value="AC" onclick="clearAll()"></td>
+      <td><input type="button" value="C" onclick="erase()"></td>
+      <td><input type="button" value="%" onclick="display(value)"></td>
+      <td><input type="button" value="/" onclick="display(value)"></td>
+      <!-- Fourth -->
+      <td><input type="button" value="&pi;" onclick="pi(value)"></td>
+      <td><input type="button" value="7" onclick="display(value)"></td>
+      <td><input type="button" value="8" onclick="display(value)"></td>
+      <td><input type="button" value="9" onclick="display(value)"></td>
+      <td><input type="button" class="times"  value="&times;" onclick="display('*')"></td>
+      <!-- Fifth -->
+      <td><input type="button" value="&exponentiale;" onclick="exp(value)"></td>
+      <td><input type="button" value="4" onclick="display(value)"></td>
+      <td><input type="button" value="5" onclick="display(value)"></td>
+      <td><input type="button" value="6" onclick="display(value)"></td>
+      <td><input type="button" value="-" onclick="display(value)"></td>
+      <!-- Sixth -->
+      <td><input type="button" value="x&sup;y" onclick="sup('**')"></td>
+      <td><input type="button" value="1" onclick="display(value)"></td>
+      <td><input type="button" value="2" onclick="display(value)"></td>
+      <td><input type="button" value="3" onclick="display(value)"></td>
+      <td><input type="button" value="+" onclick="display(value)"></td>
+      <!-- Seventh -->
+      <td><input type="button" value="x!" onclick="fact()"></td>
+      <td><input type="button" value="!"></td>
+      <td><input type="button" value="0" onclick="display(value)"></td>
+      <td><input type="button" value="." onclick="display(value)"></td>
+      <td><input type="button" value="=" onclick="finalAnswer()"></td>
+
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
